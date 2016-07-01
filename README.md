@@ -1,7 +1,7 @@
 # find_position
 find the corresponding positions of point (record in BED file, such as DNA methylated sites, SNP or so on) based on the annotation (GTF file). Basically just count the number of reads falling into 5' and 3' UTRs, CDS and introns. 
 
-USE: >perl step1_find_position -r <gtf reference> -f <bed file> -o <optional: the output file name>
+USE: perl step1_find_position -r file.gtf -f file.bed -o outputName
 
 
 So far this script only support gtf file from flybase. If you want to use it for other gtf reference, please check the code and make sure you capture the right name of the transcript id. 
