@@ -3,8 +3,10 @@ find the corresponding positions of point (record in BED file, such as DNA methy
 
 USE: perl step1_find_position -r file.gtf -f file.bed -o outputName
 
-
-So far this script only support gtf file from flybase. If you want to use it for other gtf reference, please check the code and make sure you capture the right name of the transcript id. 
+NOTE: 
+1, bed file should hold single site position. 
+2, So far this script only support gtf file from flybase. If you want to use it for other gtf reference, please check the code and make sure you capture the right name of the transcript id. 
+3, outputName is optional. You don't have to assign a name. But better have it or you may get confused in the future :).
 
 When the files were generated from step1, you can use step2_sum.R to figure out whether the distribution and density of those points may be correlated or not with CBI, the codon usage bias index. The code are better run under R studio.   
 
