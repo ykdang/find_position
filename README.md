@@ -2,6 +2,9 @@
 find the corresponding positions of point (record in BED file, such as DNA methylated sites, SNP or so on) based on the annotation (GTF file). Basically just count the number of reads falling into 5' and 3' UTRs, CDS and introns. Then statistics can be analyzed with R codes. 
 
 ### USE:
+
+keep the codes (both step1_find_position and summary.pl) in the same directory, then run in the terminal
+
 ```perl step1_find_position -r <file.gtf> -f <file.bed> -o <outputName>```
 
 ### NOTE: 
